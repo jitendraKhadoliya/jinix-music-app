@@ -1,8 +1,11 @@
 import { Error, Loader, SongCard } from "../components";
 import { genres } from "../assets/constants";
+import { useGetTopChartsQuery } from "../redux/services/shazamCore";
 
 const Discover = () => {
-  console.log(genres);
+  const { data, isFetching, error } = useGetTopChartsQuery();
+  console.log("data", data);
+  // console.log(genres);
   return (
     <div className=" flex flex-col">
       <div className=" w-full flex justify-between items-center sm:flex-row flex-col mt-4 mb-10">
