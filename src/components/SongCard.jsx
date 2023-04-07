@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PlayPause from "./PlayPause";
+import PlayPause from "../components/PlayPause";
 
 const SongCard = ({ song }) => {
   const activeSong = "test";
